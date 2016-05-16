@@ -1,6 +1,6 @@
 ## KindEditor for Yii2
 
-1. 设置
+1. 说明
 2. 使用
 2.1 在视图文件中
 
@@ -13,7 +13,7 @@
   ```
 2.2 在控制器中 
 
-  ``` 
+  ```php
     public function actions(){
         return [
             'upload'=>[
