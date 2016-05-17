@@ -1,9 +1,10 @@
 ## KindEditor for Yii2
 
 1 下载
-1.1 修改项目的composer.json 
 
+1.1 修改项目的composer.json 
 在 repositories 属性中添加，如下代码，没有repositories属性，则补充添加
+
     ```
         "repositories": [
             {
