@@ -1,0 +1,17 @@
+{
+    "name": "specialnote/kinkeditor",
+    "type": "project",
+    "description": "KindEditor for Yii2",
+    "keywords": ["KindEditor", "Yii2"],
+    "homepage": "https://github.com/specialnote/kindeditor",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": { "KindEditor\\": "KindEditor" }
+    },
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "config": {
+        "process-timeout": 1800
+    }
+}
