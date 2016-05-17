@@ -17,7 +17,7 @@
     public function actions(){
         return [
             'upload'=>[
-                'class' => 'KindEditor\Models\KindEditor',
+                'class' => '\KindEditor\Models\KindEditor',
                 'config' => [
                     'save_path' => \Yii::$app->basePath.'/web/upload/',
                     'php_url' => '/upload/',//图片访问地址前部分，url = php_url.$file_name.'.'.$ext
