@@ -1,6 +1,24 @@
 ## KindEditor for Yii2
 
-1. 说明
+1. 下载
+1.1 修改项目的composer.json
+1.1.1 在 repositories 属性中添加，如下代码，没有repositories属性，则补充添加
+
+    ```
+        "repositories": [
+            {
+                "type": "git",
+                "url": "https://github.com/specialnote/kindeditor.git"
+            }
+        ],
+    ```
+1.1.2 在 require 属性中添加如下代码
+
+    ```
+     "specialnote/kinkeditor":"dev-master"
+    ```
+1.1.3 使用composer更新依赖
+
 2. 使用
 2.1 在视图文件中
 
