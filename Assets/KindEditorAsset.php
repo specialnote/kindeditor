@@ -22,6 +22,6 @@ class KindEditorAsset extends AssetBundle
 
     public function init()
     {
-        $this->sourcePath = dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'kindeditor' . DIRECTORY_SEPARATOR . '4.1.11';
+        $this->sourcePath = dirname(dirname(__FILE__)) . '/vendor/kindeditor/4.1.11';
     }
 }

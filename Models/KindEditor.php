@@ -15,7 +15,7 @@ class KindEditor extends Action
         $this->config['php_url'] = isset($this->config['php_url']) ? $this->config['php_url'] : '/upload/';
         $this->config['save_path'] = isset($this->config['save_path']) ? $this->config['save_path'] : Yii::$app->basePath . '/web/upload/';
         $this->config['image_ext'] = isset($this->config['image_ext']) ? $this->config['image_ext'] : ['gif', 'jpg', 'jpeg', 'png', 'bmp'];
-        $this->config['max_size'] = isset($this->config['max_size']) ? $this->config['max_size'] : 2014 * 1024 * 10;
+        $this->config['max_size'] = isset($this->config['max_size']) ? $this->config['max_size'] : 1024 * 1024 * 10;
 
         parent::init();
     }
@@ -27,9 +27,7 @@ class KindEditor extends Action
         $max_size = $this->config['max_size'];
         $save_path = $this->config['save_path'];
         $php_url = $this->config['php_url'];
-        //$save_path = realpath($save_path);
         //检查目录
-
         if (false === file_exists($save_path)) {
             if (false === mkdir($save_path)) {
                 return ['error' => 1, 'message' => '上传目录不存在'];
